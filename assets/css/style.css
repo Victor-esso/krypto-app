@@ -1,0 +1,246 @@
+/*-----------------------------------------------------------------------------------
+
+	Theme Name: Quebe
+	Theme URI: 
+	Description: 
+	Author: Victor Esso-Nmakwe
+	Author URI: 
+	Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* No ScrollBAR */
+*::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    display: none;
+}
+
+*,
+:active,
+:focus {
+    outline: none !important;
+}
+
+body,
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+.icon-s{
+    height: 1.4rem;
+}
+.tc-black{
+    color: #282828 !important;
+}
+.tc-dark-grey{
+    color: #4a4a4a !important;
+}
+.tc-grey{
+    color:#A5A5A5 !important;
+}
+.tc-green{
+    color: #1CA37A !important;
+}
+.tc-red{
+    color: #bf2020 !important;
+}
+.bg-green{
+    background-color: #1CA37A !important;
+}
+.bg-btc{
+    background-color: #FF9A1C !important;
+}
+.bg-eth{
+    background-color: #402DD8 !important;
+}
+.bg-btcc{
+    background-color: #87C548 !important;
+}
+.bg-teth{
+    background-color: #1A9E74 !important;
+}
+.bg-softgrey{
+    background-color: #a5a5a549 !important;
+    color: #282828 !important; 
+}
+
+.border-right{
+    border-right: 1px solid !important;
+}
+.border-left{
+    border-left: 1px solid rgba(193, 193, 193, 0.464) !important;
+}
+.border-top{
+    border-top: 1px solid !important;
+}
+.border-grey{
+    border-color: rgba(193, 193, 193, 0.15) !important;
+}
+
+.flex-between-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-between-start{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.flex-between-end{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.flex-start-center{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+.flex-start-start{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+}
+.flex-start-end{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-end;
+}
+
+.icon-box{
+    display: grid;
+    place-items: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: #282828;
+    border-radius: .5rem;
+    color: white;
+}
+.icon-box.trans{
+    background-color: unset;
+}
+.link{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+.link>div{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-bottom: .3rem;
+}
+.link>div>img{
+    height: 1.2rem;
+}
+.link>span{
+    text-align: center;
+    font-size: .75rem;
+    padding: 0 .6rem;
+    color: #A5A5A5;
+}
+.v-page{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: inherit;
+    background-color: white;
+}
+.v-page.bg-fade{
+    background-color: #2225339f;
+    backdrop-filter: blur(1px);
+}
+.page-inner{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+.page-inner a{
+    text-decoration: none;
+}
+.top-line{
+    width: 2rem;
+    height: .25rem;
+    border-radius: 1rem;
+    margin: auto;
+    background-color: rgba(29, 29, 29, 0.304);
+}
+.sub-icon{
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: red;
+    border-radius: 50%;
+    right: -.05rem;
+    bottom: -.2rem;
+    display: grid;
+    place-items: center;
+    border: 2px solid white;
+    color: white;
+}
+.input-it{
+    overflow: hidden;
+    border-radius: .5rem;
+}
+.input-it>input{
+    display: block;
+    width: 100%;
+    border: unset;
+    padding: 1rem;
+    padding-right: 3.5rem;
+    font-weight: 500;
+    color: #4a4a4a;
+    font-size: 1rem;
+}
+.input-it>input::placeholder{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #A5A5A5;
+}
+.input-it>label[icon]{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.input-it>label[icon]>img{
+    height: 1.6rem;
+}
+.summary-select p.active{
+    display: none;
+}
+.summary-select.active p.active{
+    display: block;
+}
+.summary-select.active p.no-active{
+    display: none;
+}
+.btn-v,.btn-v:active,.btn-v:hover{
+    display: block;
+    text-decoration: none;
+    background-color: #2d66d8;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: .5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}

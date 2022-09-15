@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+
+    <!-- Boostrap 5.0.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- JQuery Ui -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AnimateCSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/lasky.css">
+
+    <title>Document</title>
+</head>
+<body class="noselect">
+
+    <!-- Home Page -->
+    <div class="fit-parent position-absolute overflow-hidden d-flex flex-column">
+        <!-- Top Start -->
+        <div class=" pad-top-0-9rem pad-bottom-0-9rem flex-shrink-0 d-flex justify-content-between align-items-center  px-4">
+            <img src="assets/icons/profile.svg" alt="" class="icon-s">
+            <span class=" fs-1-3rem fw-500 tc-black">Home</span>
+            <img src="assets/icons/qr-code.svg" alt="" class="icon-s">
+        </div>
+        <!-- Top End -->
+
+        <!-- Body Start -->
+        <div class=" height-100 flex-grow-1 scroll-y px-1">
+
+            <!-- Balance section -->
+            <div class="d-flex justify-content-between px-4 py-3 pb-4 align-items-center border-bottom border-grey">
+                <div class="height-fit-content width-fit-content">
+                    <span class="tc-grey fw-400 fs-1rem d-block margin-bottom-n-0-4rem">Total Balance</span>
+                    <p class="tc-black fw-600 fs-1-6rem margin-bottom-0-2rem">US$3.55</p>
+                    <span class="fs-0-9rem"><span class="tc-green" >+USD$0.04(1.14%)</span><span class="tc-grey" >24 hrs</span></span>
+                </div>
+                <img src="assets/icons/pie-chart.svg" alt="">
+            </div>
+
+            <!-- US Dollar Section -->
+            <div class="flex-between-center px-4 py-4 border-bottom border-grey">
+                <div class="flex-start-center">
+                    <div class="icon-box margin-right-1rem bg-green fw-500">$</div>
+                    <div>
+                        <span class="d-block fs-1-2rem margin-bottom-n-0-7rem tc-black fw-500">US Dollar</span>
+                        <span class="fs-0-8rem tc-grey">USD</span>
+                    </div>
+                </div>
+                <div class="fs-1-2rem fw-500 tc-black">US$0.00</div>
+            </div>
+
+            <!-- Coin Market start -->
+            <div class="flex-start-start pt-4">
+                <div class="flex-grow-0 ps-3 pe-3">
+                    <div class="icon-box bg-btc radius-50p fw-500 fs-1-3rem" style="transform: rotate(20deg);"><span class="iconify" data-icon="bi:currency-bitcoin"></span></div>
+                </div>
+                <div class=" flex-grow-1 width-100 border-bottom borde-grey pb-3 ">
+                    <div class="flex-between-center">
+                        <span class="d-block fs-1-2rem margin-bottom-n-0-2rem tc-black fw-500">Bitcoin</span>
+                        <div class="flex-grow-0 px-3 d-grid" style="place-items: center start ;">
+                            <img src="assets/icons/graph1.svg" alt="" style="width:80%">
+                        </div>
+                    </div>
+                    <div class="flex-between-center">
+                        <div>
+                            <span class="d-block fs-1rem margin-bottom-n-0-5rem tc-black fw-400">0.00003211 BTC</span>
+                            <span class="fs-0-8rem tc-grey">US$0.69</span>
+                        </div>
+                        <div class="flex-grow-0 ps-4 pe-3 border-left">
+                            <span class="d-block fs-1rem margin-bottom-n-0-5rem tc-black fw-400">US$21,61...</span>
+                            <span class="fs-0-8rem tc-grey"><span class="tc-green">1.42%</span>24 hrs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-start-start pt-4">
+                <div class="flex-grow-0 ps-3 pe-3">
+                    <div class="icon-box bg-eth radius-50p fw-500 fs-1-3rem"><span class="iconify" data-icon="mdi:ethereum"></span></div>
+                </div>
+                <div class=" flex-grow-1 width-100 border-bottom borde-grey pb-3 ">
+                    <div class="flex-between-center">
+                        <span class="d-block fs-1-2rem margin-bottom-n-0-2rem tc-black fw-500">Ethereum</span>
+                        <div class="flex-grow-0 px-3 d-grid" style="place-items: center start ;">
+                            <img src="assets/icons/graph2.svg" alt="" style="width:80%">
+                        </div>
+                    </div>
+                    <div class="flex-between-center">
+                        <div>
+                            <span class="d-block fs-1rem margin-bottom-n-0-5rem tc-black fw-400">0.00006577 ETH</span>
+                            <span class="fs-0-8rem tc-grey">US$1.16</span>
+                        </div>
+                        <div class="flex-grow-0 ps-4 pe-3 border-left">
+                            <span class="d-block fs-1rem margin-bottom-n-0-5rem tc-black fw-400">US$1,772...</span>
+                            <span class="fs-0-8rem tc-grey"><span class="tc-green">2.57%</span>24 hrs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-start-start pt-4">
+                <div class="flex-grow-0 ps-3 pe-3">
+                    <div class="icon-box bg-btcc radius-50p fw-500 fs-1-3rem" style="transform: rotate(-20deg);"><span class="iconify" data-icon="bi:currency-bitcoin"></span></div>
+                </div>
+                <div class=" flex-grow-1 width-100 border-bottom borde-grey pb-3 ">
+                    <div class="flex-between-center">
+                        <span class="d-block fs-1-2rem margin-bottom-n-0-2rem tc-black fw-500">Bitcoin Cash</span>
+                        <div class="flex-grow-0 px-3 d-grid" style="place-items: center start ;">
+                            <img src="assets/icons/graph3.svg" alt="" style="width:80%">
+                        </div>
+                    </div>
+                    <div class="flex-between-center">
+                        <div>
+                            <span class="d-block fs-1rem margin-bottom-n-0-5rem tc-black fw-400">0.00005124 BCH</span>
+                            <span class="fs-0-8rem tc-grey">US$0.00</span>
+                        </div>
+                        <div class="flex-grow-0 ps-4 pe-3 border-left">
+                            <span class="d-block fs-1rem margin-bottom-n-0-5rem tc-black fw-400">US$130,85</span>
+                            <span class="fs-0-8rem tc-grey"><span class="tc-red">-2.56%</span>24 h...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-start-start pt-4">
+                <div class="flex-grow-0 ps-3 pe-3">
+                    <div class="icon-box bg-teth radius-50p fw-500 fs-1-3rem"><span class="iconify" data-icon="simple-icons:tether"></span></div>
+                </div>
+                <div class=" flex-grow-1 width-100 border-bottom borde-grey pb-3 ">
+                    <div class="flex-between-center">
+                        <span class="d-block fs-1-2rem margin-bottom-n-0-2rem tc-black fw-500">Tether</span>
+                        <div class="flex-grow-0 px-3 d-grid" style="place-items: center start ;">
+                            <img src="assets/icons/graph4.svg" alt="" style="width:80%">
+                        </div>
+                    </div>
+                    <div class="flex-between-center">
+                        <div>
+                            <span class="d-block fs-1rem margin-bottom-n-0-5rem tc-black fw-400">0.00000000 TETH</span>
+                            <span class="fs-0-8rem tc-grey">US$0.00</span>
+                        </div>
+                        <div class="flex-grow-0 ps-4 pe-3 border-left">
+                            <span class="d-block fs-1rem margin-bottom-n-0-5rem tc-black fw-400">US$12.00</span>
+                            <span class="fs-0-8rem tc-grey"><span class="tc-red">0.54%</span> 24 hrs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Coin market end -->
+        </div>
+        <!-- Body Ends -->
+
+        <div class=" px-3 pad-bottom-0-5rem pad-top-1rem flex-shrink-0 flex-between-center">
+            <a href="#" class="link">
+                <div><img src="assets/icons/home.svg" alt=""></div>
+                <span class="d-block" style="color:#0E75EA ;">Home</span>
+            </a>
+            <a href="#" class="link">
+                <div><img src="assets/icons/prices.svg" alt=""></div>
+                <span class="d-block">Price</span>
+            </a>
+            <a href="#" class="link" id="call-options">
+                <div><img src="assets/icons/plus.svg" alt="" style="height:3rem ;"></div>
+            </a>
+            <a href="#" class="link">
+                <div><img src="assets/icons/buy.svg" alt=""></div>
+                <span class="txt-line-1">Buy & Sell</span>
+            </a>
+            <a href="#" class="link">
+                <div><img src="assets/icons/activity.svg" alt=""></div>
+                <span class="d-block">Activity</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Options Page -->
+    <div class="v-page bg-fade" style="top:100%;" id="options-page">
+        <div class="page-inner pb-4 pt-2">
+
+            <div class="top-line mb-2"></div>
+
+            <div class="flex-start-center">
+                <div class="flex-grow-0 px-4 ">
+                    <div class="icon-box radius-50p tc-white bg-softgrey fs-1-5rem" ><span class="iconify" data-icon="ci:plus"></span></div>
+                </div>
+                <a href="#" class="flex-grow-1 width-100 py-3 pe-4  border-bottom flex-between-center">
+                    <div>
+                        <span class="d-block fs-1-1rem fw-500 tc-black">Buy</span>
+                        <span class="d-block tc-grey fs-0-8rem">Buy Crypto</span>
+                    </div>
+                    <span class="fs-2rem grid-center tc-grey"><span class="iconify" data-icon="eva:chevron-right-fill"></span></span>
+                </a>
+            </div>
+
+            <div class="flex-start-center">
+                <div class="flex-grow-0 px-4 ">
+                    <div class="icon-box radius-50p tc-white bg-softgrey fs-1-5rem" ><span class="iconify" data-icon="ci:minus"></span></div>
+                </div>
+                <a href="#" class="flex-grow-1 width-100 py-3 pe-4  border-bottom flex-between-center">
+                    <div>
+                        <span class="d-block fs-1-1rem fw-500 tc-black">Sell</span>
+                        <span class="d-block tc-grey fs-0-8rem">Sell Crypto</span>
+                    </div>
+                    <span class="fs-2rem grid-center tc-grey"><span class="iconify" data-icon="eva:chevron-right-fill"></span></span>
+                </a>
+            </div>
+
+            <div class="flex-start-center">
+                <div class="flex-grow-0 px-4 ">
+                    <div class="icon-box radius-50p tc-white bg-softgrey fs-1-4rem" ><span class="iconify" data-icon="tabler:refresh"></span></div>
+                </div>
+                <a href="#" class="flex-grow-1 width-100 py-3 pe-4  border-bottom flex-between-center">
+                    <div>
+                        <span class="d-block fs-1-1rem fw-500 tc-black">Swap</span>
+                        <span class="d-block tc-grey fs-0-8rem">Exchange for Another Crypto</span>
+                    </div>
+                    <span class="fs-2rem grid-center tc-grey"><span class="iconify" data-icon="eva:chevron-right-fill"></span></span>
+                </a>
+            </div>
+
+            <div class="flex-start-center">
+                <div class="flex-grow-0 px-4 ">
+                    <div class="icon-box radius-50p tc-white bg-softgrey fs-1-4rem"  style="transform: rotate(180deg);"><span class="iconify" data-icon="ci:download"></span></div>
+                </div>
+                <a href="#" class="flex-grow-1 width-100 py-3 pe-4  border-bottom flex-between-center" id="call-send">
+                    <div>
+                        <span class="d-block fs-1-1rem fw-500 tc-black">Send</span>
+                        <span class="d-block tc-grey fs-0-8rem">Send to Any Wallet</span>
+                    </div>
+                    <span class="fs-2rem grid-center tc-grey"><span class="iconify" data-icon="eva:chevron-right-fill"></span></span>
+                </a>
+            </div>
+
+            <div class="flex-start-center">
+                <div class="flex-grow-0 px-4 ">
+                    <div class="icon-box radius-50p tc-white bg-softgrey fs-1-4rem" ><span class="iconify" data-icon="ci:download"></span></div>
+                </div>
+                <a href="#" class="flex-grow-1 width-100 py-3 pe-4  border-bottom flex-between-center">
+                    <div>
+                        <span class="d-block fs-1-1rem fw-500 tc-black">Recieve</span>
+                        <span class="d-block tc-grey fs-0-8rem">Copy Your Address & QR Codes</span>
+                    </div>
+                    <span class="fs-2rem grid-center tc-grey"><span class="iconify" data-icon="eva:chevron-right-fill"></span></span>
+                </a>
+            </div>
+
+            <div class="flex-start-center">
+                <div class="flex-grow-0 px-4 ">
+                    <div class="icon-box radius-50p tc-white bg-softgrey fs-1-2rem" ><span class="iconify" data-icon="mdi:percent"></span></div>
+                </div>
+                <a href="#" class="flex-grow-1 width-100 py-3 pe-4  border-bottom flex-between-center">
+                    <div>
+                        <span class="d-block fs-1-1rem fw-500 tc-black">Reward</span>
+                        <span class="d-block tc-grey fs-0-8rem">Earn Rewards on Your Crypto</span>
+                    </div>
+                    <span class="fs-2rem grid-center tc-grey"><span class="iconify" data-icon="eva:chevron-right-fill"></span></span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Send Page -->
+    <div class="v-page d-flex flex-column" style="left: -100%;" id="send-page">
+        <!-- Top -->
+        <div class="flex-shrink-0 flex-between-center px-4 py-3" >
+            <span class="grid-center fs-2-4rem tc-black icon-box trans close-send" ><span class="iconify" data-icon="heroicons:arrow-small-left-20-solid"></span></span>
+            <span class=" fs-1-3rem fw-500 tc-black">Send</span>
+            <span class="grid-center fs-1-5rem tc-grey icon-box trans close-send" ><span class="iconify" data-icon="carbon:close-filled"></span></span>
+        </div>
+
+        <!-- Body -->
+        <div class="height-100 flex-grow-1 scroll-y py-2">
+            <!-- Divider -->
+            <div class=" flex-start-center px-4">
+                <span class="pe-3 tc-dark-grey fs-0-9rem fw-500">From</span>
+                <div class="width-100 border-bottom"></div>
+            </div>
+
+            <!-- Summary row -->
+            <div class="flex-between-center px-4 pt-2 pb-3">
+                <div class="flex-start-center">
+                    <div class="width-fit-content height-fit-content position-relative me-3">
+                        <div class="icon-box radius-50p bg-btc fs-1-3rem" style="transform: rotate(20deg);"><span class="iconify" data-icon="bi:currency-bitcoin"></span></div>
+                        <div class="sub-icon bg-btc fs-0-5rem"><span class="iconify" data-icon="ic:baseline-vpn-key"></span></div>
+                    </div>
+                    <div>
+                        <p class="margin-bottom-n-0-2rem fs-1rem fw-500 tc-dark-grey">Private Key Wallet</p>
+                        <span class="tc-grey fs-0-8rem">BTC</span>
+                    </div>
+                </div>
+                <div>
+                    <p class="margin-bottom-n-0-2rem fs-1rem fw-500 tc-dark-grey">0.0 BTC</p>
+                    <span class="tc-grey fs-0-8rem">US$0.00</span>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class=" flex-start-center px-4">
+                <span class="pe-3 tc-dark-grey fs-0-9rem fw-500">To</span>
+                <div class="width-100 border-bottom"></div>
+            </div>
+
+            <!-- Input -->
+            <div class="px-4 pt-2 mb-4">
+                <div class="input-it border position-relative">
+                    <input type="text" placeholder="Enter address or domain" id="btc-address">
+                    <label for="btc-address" icon><img src="assets/icons/qr-code.svg" alt="" class="icon-s"></label>
+                </div>
+                <span class="tc-dark-grey fw-400 fs-0-7rem">Only Send BTC to wallets on the Bitcoin network.</span>
+                <span class="tc-grey fw-400 fs-0-7rem d-block mt-3">Or Select a Wallet</span>
+            </div>
+
+            <!-- Summary row -->
+            <div class="flex-between-center px-4 py-4 border-bottom summary-select toggle-active">
+                <div class="flex-start-center">
+                    <div class="width-fit-content height-fit-content position-relative me-3">
+                        <div class="icon-box radius-50p bg-btc fs-1-3rem" style="transform: rotate(20deg);"><span class="iconify" data-icon="bi:currency-bitcoin"></span></div>
+                        <div class="sub-icon bg-btc fs-0-5rem"><span class="iconify" data-icon="bi:box-fill"></span></div>
+                    </div>
+                    <div>
+                        <p class="margin-bottom-n-0-2rem fs-1rem fw-500 tc-dark-grey">Exchange Account</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="margin-bottom-n-0-2rem fs-1-2rem fw-500 tc-grey no-active"><span class="iconify" data-icon="gg:radio-check"></span></p>
+                    <p class="margin-bottom-n-0-2rem fs-1-5rem fw-500 tc-green active"><span class="iconify" data-icon="bxs:check-circle"></span></p>
+                </div>
+            </div>
+
+            <!-- Summary row -->
+            <div class="flex-between-center px-4 py-4 border-bottom summary-select toggle-active" >
+                <div class="flex-start-center">
+                    <div class="width-fit-content height-fit-content position-relative me-3">
+                        <div class="icon-box radius-50p bg-btc fs-1-3rem" style="transform: rotate(20deg);"><span class="iconify" data-icon="bi:currency-bitcoin"></span></div>
+                        <div class="sub-icon bg-btc fs-0-5rem" ><span class="iconify" data-icon="oi:resize-both"></span></div>
+                    </div>
+                    <div>
+                        <p class="margin-bottom-n-0-2rem fs-1rem fw-500 tc-dark-grey">Trading Account</p>
+                        <span class="tc-grey fs-0-8rem">0.0 BTC</span>
+                    </div>
+                </div>
+                <div>
+                    <p class="margin-bottom-n-0-2rem fs-1-2rem fw-500 tc-grey no-active"><span class="iconify" data-icon="gg:radio-check"></span></p>
+                    <p class="margin-bottom-n-0-2rem fs-1-5rem fw-500 tc-green active"><span class="iconify" data-icon="bxs:check-circle"></span></p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom -->
+        <div class="flex-shrink-0 px-4 py-2 pb-3">
+            <a href="#" class="btn-v">Next</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+    <!-- JQuery UI -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="assets/js/javascript.js"></script>
+    <script src="assets/js/functions.js"></script>
+    <script src="assets/js/app_functions.js"></script>
+
+
+
+    <!-- Main Javascript -->
+    <script src="assets/js/script.js"></script> 
+</body>
+</html>
