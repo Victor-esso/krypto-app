@@ -170,7 +170,7 @@
                 <div><img src="assets/icons/prices.svg" alt=""></div>
                 <span class="d-block">Price</span>
             </a>
-            <a href="#" class="link" id="call-options">
+            <a href="#" class="link" call="options-page" call-style='{"top":"0"}'>
                 <div><img src="assets/icons/plus.svg" alt="" style="height:3rem ;"></div>
             </a>
             <a href="#" class="link">
@@ -233,7 +233,7 @@
                 <div class="flex-grow-0 px-4 ">
                     <div class="icon-box radius-50p tc-white bg-softgrey fs-1-4rem"  style="transform: rotate(180deg);"><span class="iconify" data-icon="ci:download"></span></div>
                 </div>
-                <a href="#" class="flex-grow-1 width-100 py-3 pe-4  border-bottom flex-between-center" id="call-send">
+                <a href="#" class="flex-grow-1 width-100 py-3 pe-4  border-bottom flex-between-center" call="send-page" call-style='{"left":"0"}'>
                     <div>
                         <span class="d-block fs-1-1rem fw-500 tc-black">Send</span>
                         <span class="d-block tc-grey fs-0-8rem">Send to Any Wallet</span>
@@ -275,9 +275,9 @@
     <div class="v-page d-flex flex-column" style="left: -100%;" id="send-page">
         <!-- Top -->
         <div class="flex-shrink-0 flex-between-center px-4 py-3" >
-            <span class="grid-center fs-2-4rem tc-black icon-box trans close-send" ><span class="iconify" data-icon="heroicons:arrow-small-left-20-solid"></span></span>
+            <span class="grid-center fs-2-4rem tc-black icon-box trans close-send opacity-0" ><span class="iconify" data-icon="heroicons:arrow-small-left-20-solid"></span></span>
             <span class=" fs-1-3rem fw-500 tc-black">Send</span>
-            <span class="grid-center fs-1-5rem tc-grey icon-box trans close-send" ><span class="iconify" data-icon="carbon:close-filled"></span></span>
+            <span class="grid-center fs-1-5rem tc-grey icon-box trans" close="send-page" close-style='{"left":"-100%"}'><span class="iconify" data-icon="carbon:close-filled"></span></span>
         </div>
 
         <!-- Body -->
@@ -361,7 +361,159 @@
 
         <!-- Bottom -->
         <div class="flex-shrink-0 px-4 py-2 pb-3">
-            <a href="#" class="btn-v">Next</a>
+            <a href="#" class="btn-v" call="amount-page" call-style='{"left":"0"}'>Next</a>
+        </div>
+    </div>
+    
+
+    <!-- Amount page -->
+    <div class="v-page d-flex flex-column" id="amount-page" style="left: -100%;" >
+        <!-- Top -->
+        <div class="flex-shrink-0 flex-between-center px-4 py-3" >
+            <span class="grid-center fs-2-4rem tc-black icon-box trans" close="amount-page" close-style='{"left":"-100%"}'><span class="iconify" data-icon="heroicons:arrow-small-left-20-solid"></span></span>
+            <span class=" fs-1-3rem fw-500 tc-black">Send</span>
+            <span class="grid-center fs-1-5rem tc-grey icon-box trans" close="amount-page" close-style='{"left":"-100%"}' ><span class="iconify" data-icon="carbon:close-filled"></span></span>
+        </div>
+
+        <!-- Body -->
+        <div class="height-100 flex-grow-1 scroll-y py-2 d-flex flex-column">
+
+            <!-- From Account -->
+            <div class="d-flex px-4 flex-shrink-0">
+                <div class="width-100">
+                    <span  class="tc-grey fw-400 fs-0-8rem d-block margin-bottom-0-2rem" >From: Trading Account</span>
+                    <span  class="tc-dark-grey fw-500 fs-0-9rem txt-line-1" >To: 3FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc5</span>
+                </div>
+                <div class="width-fit-content height-fit-content position-relative me-3 flex-shrink-0 pad-right-1-3rem">
+                    <div class="sub-icon-right  fs-1-2rem" ><span class="iconify" data-icon="ci:long-bottom-up"></span></div>
+                    <div class="icon-box radius-50p bg-btc fs-1-3rem" style="transform: rotate(20deg);"><span class="iconify" data-icon="bi:currency-bitcoin"></span></div>
+                </div>
+            </div>
+
+            <!-- AMOUNT input -->
+            <div class="grid-center height-100 px-4">
+                <div class="height-fit-content ">
+                    <div class="grid-center">
+                        <span class=" tc-black fs-3rem txt-line-1 text-center" id="amount-trigger" value="">US$0</span>
+                        <span class="tc-dark-grey">0 BTC</span>
+                        <input type="number" class="hidden-input" id="amount-input">
+                    </div>
+                    <div class="amtTog">
+                        <span class="d-block"><span class="iconify" data-icon="entypo:chevron-up"></span></span>
+                        <span class="d-block"><span class="iconify" data-icon="entypo:chevron-down"></span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Options -->
+            <div class="flex-between-center px-4 py-2" id="amt-options">
+                <div>
+                    <span class="d-block fs-0-9rem tc-blue">Available</span>
+                    <span class="tc-black">US$0.00</span>
+                </div>
+                <button class="btn-2">Send Max</button>
+            </div>
+
+        </div>
+
+        <!-- Bottom -->
+        <div class="flex-shrink-0 px-4 py-2 pb-3">
+            <a href="#" class="btn-v" call="summary-page" call-style='{"bottom":"0"}'>Preview Send</a>
+        </div>
+    </div>
+
+    <!-- Summary page -->
+    <div class="v-page d-flex flex-column" id="summary-page" style="bottom: 100% ; top: unset; " >
+        <!-- Top -->
+        <div class="flex-shrink-0 flex-between-center px-4 py-3" >
+            <span class="grid-center fs-2-4rem tc-black icon-box trans" close="summary-page" close-style='{"bottom":"100%"}'><span class="iconify" data-icon="heroicons:arrow-small-left-20-solid"></span></span>
+            <span class=" fs-1-3rem fw-500 tc-black">Send</span>
+            <span class="grid-center fs-1-5rem tc-grey icon-box trans opacity-0" close="summary-page" close-style='{"top":"-100%"}' ><span class="iconify" data-icon="carbon:close-filled"></span></span>
+        </div>
+
+        <!-- Body -->
+        <div class="height-100 flex-grow-1 scroll-y py-2 d-flex flex-column">
+
+            <!-- From Account -->
+            <div class="single-summary px-4 py-3">
+                <div class="width-100">
+                    <span  class="tc-grey fw-400 fs-0-8rem d-block margin-bottom-0-2rem" >Send</span>
+                    <span  class="tc-dark-grey fw-500 fs-0-9rem txt-line-1" >0.00002882 BTC</span>
+                </div>
+            </div>
+
+            <div class="single-summary px-4 py-3">
+                <div class="width-100">
+                    <span  class="tc-grey fw-400 fs-0-8rem d-block margin-bottom-0-2rem" >From</span>
+                    <span  class="tc-dark-grey fw-500 fs-0-9rem txt-line-1" >Private Key Wallet</span>
+                </div>
+            </div>
+            <div class="single-summary px-4 py-3">
+                <div class="width-100">
+                    <span  class="tc-grey fw-400 fs-0-8rem d-block margin-bottom-0-2rem" >To</span>
+                    <span  class="tc-dark-grey fw-500 fs-0-9rem txt-line-1" >3FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc5</span>
+                </div>
+            </div>
+
+            <div class="single-summary px-4 py-3">
+                <div class="width-100">
+                    <span  class="tc-grey fw-400 fs-0-8rem d-block margin-bottom-0-2rem" >Fee - Regular</span>
+                    <span  class="tc-dark-grey fw-500 fs-0-9rem txt-line-1" >0.00000329 BTC</span>
+                </div>
+            </div>
+
+            <div class="single-summary px-4 py-3">
+                <div class="width-100">
+                    <span  class="tc-grey fw-400 fs-0-8rem d-block margin-bottom-0-2rem" >Total</span>
+                    <span  class="tc-dark-grey fw-500 fs-0-9rem txt-line-1" >0.00003211 BTC (US$0.69)</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom -->
+        <div class="flex-shrink-0 px-4 py-2 pb-3">
+            <a href="#" class="btn-v call-process">Confirm</a>
+        </div>
+    </div>
+
+    <!-- Process page -->
+    <div class="v-page d-flex flex-column" id="process-page" style="left: -100% ;" >
+        <!-- Top -->
+        <div class="flex-shrink-0 flex-between-center px-4 py-3" >
+            <span class="grid-center fs-2-4rem tc-black icon-box trans opacity-0" close="process-page" close-style='{"left":"-100%"}'><span class="iconify" data-icon="heroicons:arrow-small-left-20-solid "></span></span>
+            <span class=" fs-1-3rem fw-500 tc-black opacity-0">Send</span>
+            <span class="grid-center fs-1-5rem tc-grey icon-box trans close-all-start-over "><span class="iconify" data-icon="carbon:close-filled"></span></span>
+        </div>
+
+        <!-- Body -->
+        <div class="height-100 flex-grow-1 scroll-y py-2 grid-center">
+
+            <div>
+                <div class="grid-center mb-4">
+                    <div class="width-fit-content height-fit-content position-relative">
+                        <div class="icon-box radius-50p bg-btc fs-1-6rem" style="transform: rotate(20deg); width: 4rem; height: 4rem; font-size: 2.5rem;"><span class="iconify" data-icon="bi:currency-bitcoin"></span></div>
+                        <div class="sub-icon-top d-none  fs-0-5rem" processing></div>
+                        <div class="sub-icon-top icon  d-none fs-1-5rem" success><span class="iconify" data-icon="material-symbols:check-small"></span></div>
+                    </div>
+                </div>
+                <div class="d-none" success>
+                    <span class="d-block text-center tc-black fs-1-3rem fw-500">0.0002882 BTC Sent</span>
+                    <span class="d-block text-center tc-grey fs-0-8rem">Your Bitcoin has been successfully sent.</span>
+                </div>
+                <div class="d-none" processing>
+                    <span class="d-block text-center tc-black fs-1-3rem fw-500">Sending 0.0002882 BTC</span>
+                    <span class="d-block text-center tc-grey fs-0-8rem">We're sending your transaction now.</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom -->
+        <div class="flex-shrink-0 px-4 py-2 pb-3">
+            <a href="#" class="btn-v d-none close-all-start-over " success>Ok</a>
+            <a href="#" class="btn-v d-none" style="opacity: .1;" processing>Processing</a>
         </div>
     </div>
 

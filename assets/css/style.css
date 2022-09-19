@@ -22,7 +22,9 @@
     height: 0px;
     display: none;
 }
-
+*[class*="txt-line"]{
+    line-break: anywhere;
+}
 *,
 :active,
 :focus {
@@ -52,6 +54,9 @@ html {
 }
 .tc-red{
     color: #bf2020 !important;
+}
+.tc-blue{
+    color: #2d66d8 !important;
 }
 .bg-green{
     background-color: #1CA37A !important;
@@ -116,7 +121,9 @@ html {
     justify-content:flex-start;
     align-items: flex-end;
 }
-
+.opacity-0{
+    opacity: 0;
+}
 .icon-box{
     display: grid;
     place-items: center;
@@ -194,6 +201,54 @@ html {
     border: 2px solid white;
     color: white;
 }
+.sub-icon-top{
+    position: absolute;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-color: white;
+    border-radius: 50%;
+    right: -.6rem;
+    top: .2rem;
+    display: grid;
+    place-items: center;
+    border: 5px solid rgb(221, 221, 221);
+    outline: 3px solid white !important;
+    border-top-color: #2d66d8;
+    animation: spin 1s linear .1s infinite;
+}
+.sub-icon-top.icon{
+    border: unset !important;
+    animation:  unset !important;
+    background-color: #17c766;
+    color: white;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+.sub-icon-right{
+    position: absolute;
+    width: 1.9rem;
+    height: 1.9rem;
+    background-color: #ff991c1b;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%) rotate(353deg);
+    right: 0rem;
+    display: grid;
+    place-items: center;
+    border: 2px solid white;
+    color: #FF9A1C;
+}
 .input-it{
     overflow: hidden;
     border-radius: .5rem;
@@ -243,4 +298,38 @@ html {
     border-radius: .5rem;
     font-size: 1.1rem;
     font-weight: 500;
+}
+.btn-2{
+    color: #2d66d8;
+    font-size: .9rem;
+    border: 1px solid #a5a5a549;
+    background-color: white;
+    padding: .3rem .5rem;
+    border-radius: .5rem;
+    font-weight: 400;
+
+}
+.hidden-input{
+    position: absolute;
+    z-index: -99999999;
+}
+.amtTog{
+    border: 1px solid #a5a5a549;
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: .5rem;
+    right: 1.5rem;
+}
+.amtTog>span{
+    display: grid;
+    place-items: center;
+    padding: 0 .6rem;
+    line-height: .6rem;
+    color: #2d66d8;
+}
+.single-summary{
+    border-top: 1px solid #a5a5a51e;
+    border-bottom: 1px solid #a5a5a51e;
 }

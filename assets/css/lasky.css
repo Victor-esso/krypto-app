@@ -10,7 +10,9 @@
 -----------------------------------------------------------------------------------*/
 
 
-
+*[class*="txt-line"]{
+    line-break: anywhere;
+}
 
 /* Border Radius REM */
 .radius-0-1rem{ border-radius: 0.1rem; }
